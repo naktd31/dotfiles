@@ -1,0 +1,21 @@
+# history size
+set-option -g history-limit 10000
+set-option -g mouse-select-pane on
+set-option -g mouse-select-window on
+set-option -g mouse-resize-pane on
+set-option -g mode-mouse on
+
+# Pane setting
+unbind '"'
+unbind %
+bind v split-window -h
+bind s split-window
+
+bind l select-pane -R
+bind h select-pane -L
+bind j select-pane -U
+bind k select-pane -D
+
+# copy-mode setting
+set-window-option -g mode-keys vi
+bind V copy-mode
