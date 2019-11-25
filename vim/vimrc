@@ -1,8 +1,13 @@
+if &compatible
+  set nocompatible
+endif
+
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 set list
+set backspace=2
 
 set incsearch
 set hlsearch
@@ -12,3 +17,8 @@ set wildmenu
 set history=1000
 
 filetype plugin indent on
+
+set runtimepath+=~/.vim/plugin.vim
+runtime plugin.vim
+
+colorscheme badwolf
